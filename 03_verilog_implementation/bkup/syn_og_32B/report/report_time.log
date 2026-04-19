@@ -1,0 +1,107 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : lenet
+Version: R-2020.09-SP5
+Date   : Sat Apr 18 00:26:03 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: scale_FC1[6]
+              (input port clocked by clk)
+  Endpoint: sram_act_wdata0_reg[9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  input external delay                                  9.6500     9.6500 r
+  scale_FC1[6] (in)                                     0.0392     9.6892 r
+  U2705/Y (NAND2X2)                                     0.0459     9.7351 f
+  U2706/Y (AND2X6)                                      0.1415     9.8766 f
+  U2707/Y (OAI2BB1X4)                                   0.0590     9.9356 r
+  U2847/Y (OR2X8)                                       0.1052    10.0409 r
+  mult_1368/B[6] (lenet_DW02_mult_0_DW02_mult_40)       0.0000    10.0409 r
+  mult_1368/U386/Y (INVX3)                              0.0463    10.0872 f
+  mult_1368/U509/Y (NOR2X2)                             0.0967    10.1839 r
+  mult_1368/U160/Y (INVX3)                              0.0619    10.2458 f
+  mult_1368/U480/Y (NOR2X4)                             0.1214    10.3672 r
+  mult_1368/S2_2_6/S (ADDFHX4)                          0.3042    10.6714 f
+  mult_1368/U425/Y (NAND2X2)                            0.0911    10.7625 r
+  mult_1368/U295/Y (NAND3X4)                            0.1295    10.8920 f
+  mult_1368/S2_4_5/CO (ADDFHX4)                         0.2870    11.1790 f
+  mult_1368/S2_5_5/CO (ADDFHX4)                         0.2608    11.4398 f
+  mult_1368/U514/Y (XOR3X2)                             0.3213    11.7611 f
+  mult_1368/U314/Y (NAND2X1)                            0.1261    11.8872 r
+  mult_1368/U312/Y (NAND3X2)                            0.1128    12.0001 f
+  mult_1368/U131/Y (NAND2X1)                            0.1226    12.1227 r
+  mult_1368/U461/Y (NAND3X2)                            0.1473    12.2700 f
+  mult_1368/U502/Y (NAND2X2)                            0.0864    12.3564 r
+  mult_1368/U263/Y (NAND3X2)                            0.1090    12.4654 f
+  mult_1368/U503/Y (NAND2X2)                            0.0906    12.5560 r
+  mult_1368/U324/Y (NAND3X2)                            0.1154    12.6714 f
+  mult_1368/U250/Y (NAND2X2)                            0.1042    12.7756 r
+  mult_1368/U264/Y (NAND3X4)                            0.1302    12.9058 f
+  mult_1368/S2_12_4/CO (ADDFHX4)                        0.2713    13.1772 f
+  mult_1368/U327/Y (XOR2X1)                             0.1664    13.3436 r
+  mult_1368/U61/Y (XOR2X2)                              0.2277    13.5713 f
+  mult_1368/U141/Y (NAND2X2)                            0.1046    13.6759 r
+  mult_1368/U47/Y (NAND2X2)                             0.0638    13.7397 f
+  mult_1368/U49/Y (CLKINVX4)                            0.0530    13.7927 r
+  mult_1368/U48/Y (NAND2X6)                             0.0623    13.8550 f
+  mult_1368/U50/Y (NAND2X4)                             0.0618    13.9168 r
+  mult_1368/U410/Y (NAND3X4)                            0.0957    14.0125 f
+  mult_1368/U525/Y (NAND2X2)                            0.1144    14.1269 r
+  mult_1368/U155/Y (NAND3X6)                            0.1201    14.2470 f
+  mult_1368/S2_17_3/CO (ADDFHX4)                        0.2793    14.5263 f
+  mult_1368/S2_18_3/CO (ADDFHX4)                        0.2734    14.7997 f
+  mult_1368/S2_19_3/CO (ADDFHX4)                        0.2734    15.0731 f
+  mult_1368/S2_20_3/CO (ADDFHX4)                        0.2734    15.3464 f
+  mult_1368/S2_21_3/CO (ADDFHX4)                        0.2734    15.6198 f
+  mult_1368/S2_22_3/CO (ADDFHX4)                        0.2734    15.8931 f
+  mult_1368/S2_23_3/CO (ADDFHX4)                        0.2734    16.1665 f
+  mult_1368/S2_24_3/CO (ADDFHX4)                        0.2734    16.4399 f
+  mult_1368/S2_25_3/CO (ADDFHX4)                        0.2734    16.7132 f
+  mult_1368/S2_26_3/S (ADDFHX4)                         0.2550    16.9682 f
+  mult_1368/S2_27_2/S (ADDFHX4)                         0.2420    17.2103 r
+  mult_1368/S2_28_1/S (ADDFHX4)                         0.2684    17.4786 r
+  mult_1368/U340/Y (INVXL)                              0.0459    17.5246 f
+  mult_1368/U341/Y (INVXL)                              0.0619    17.5864 r
+  mult_1368/U590/Y (XOR2XL)                             0.1878    17.7743 r
+  mult_1368/U591/Y (XOR2XL)                             0.2253    17.9995 f
+  mult_1368/PRODUCT[29] (lenet_DW02_mult_0_DW02_mult_40)
+                                                        0.0000    17.9995 f
+  U2644/Y (OR4X2)                                       0.2669    18.2664 f
+  U2643/Y (NOR2BX2)                                     0.1184    18.3848 r
+  U2748/Y (OR2X6)                                       0.1353    18.5200 r
+  U2900/Y (INVX8)                                       0.0502    18.5702 f
+  U2810/Y (OR2X4)                                       0.1597    18.7299 f
+  U2828/Y (OAI2BB2X4)                                   0.1308    18.8606 f
+  U2809/Y (AOI211X2)                                    0.1118    18.9724 r
+  U2790/Y (MXI2X1)                                      0.0945    19.0669 f
+  sram_act_wdata0_reg[9]/D (DFFQXL)                     0.0000    19.0669 f
+  data arrival time                                               19.0669
+
+  clock clk (rise edge)                                19.3000    19.3000
+  clock network delay (ideal)                           0.0000    19.3000
+  sram_act_wdata0_reg[9]/CK (DFFQXL)                    0.0000    19.3000 r
+  library setup time                                   -0.2303    19.0697
+  data required time                                              19.0697
+  --------------------------------------------------------------------------
+  data required time                                              19.0697
+  data arrival time                                              -19.0669
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0028
+
+
+1
