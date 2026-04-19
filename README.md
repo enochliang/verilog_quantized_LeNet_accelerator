@@ -1,1 +1,2 @@
-# 2022_Spring_NTHUCS_VLSI_System_Design_CS5120
+# README
+This is the repository of project in the course (VLSI_System_Design - CS5120, 2022 Spring, NTHU)
