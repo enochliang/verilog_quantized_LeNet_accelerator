@@ -1,0 +1,3 @@
+source /usr/cadtool/user_setup/03-incisiv.csh
+source /usr/cadtool/user_setup/08-verdi.csh
+setenv LD_LIBRARY_PATH ${VERDI_HOME}/share/PLI/IUS/LINUX64:${LD_LIBRARY_PATH}
