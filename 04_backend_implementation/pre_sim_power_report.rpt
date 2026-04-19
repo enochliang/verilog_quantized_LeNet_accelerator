@@ -1,0 +1,38 @@
+****************************************
+Report : Time Based Power (Cycle Accurate)
+Design : lenet
+Version: R-2020.09
+Date   : Sat May 28 17:08:37 2022
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network           2.867e-04 8.847e-05 1.364e-08 3.752e-04 (29.68%)  i
+register                2.427e-05 1.551e-05 2.628e-07 4.004e-05 ( 3.17%)  
+combinational           4.615e-04 3.846e-04 2.542e-06 8.487e-04 (67.15%)  
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power          = 4.886e-04   (38.66%)
+  Cell Internal Power          = 7.725e-04   (61.12%)
+  Cell Leakage Power           = 2.818e-06   ( 0.22%)
+                                 ---------
+Total Power                    = 1.264e-03  (100.00%)
+
+X Transition Power             = 1.184e-07
+CAPP Estimated Glitching Power = 1.577e-04
+
+Peak Power                     = 4.163e-03
+Peak Time                      =     42310
+
+1
