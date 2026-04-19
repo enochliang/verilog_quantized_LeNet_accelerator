@@ -1,0 +1,100 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : lenet
+Version: R-2020.09-SP5
+Date   : Sun Apr 19 11:53:43 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: scale_CONV2[6]
+              (input port clocked by clk)
+  Endpoint: sram_act_wdata0_reg[17]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  input external delay                                  9.6500     9.6500 r
+  scale_CONV2[6] (in)                                   0.0237     9.6737 r
+  U2138/Y (AOI22X1)                                     0.0873     9.7610 f
+  U3667/Y (OAI2BB1X2)                                   0.1136     9.8745 r
+  U2002/Y (NOR2X2)                                      0.0770     9.9515 f
+  U2001/Y (INVX1)                                       0.2264    10.1779 r
+  mult_1268_G2/B[6] (lenet_DW02_mult_1_DW02_mult_41)    0.0000    10.1779 r
+  mult_1268_G2/U82/Y (AND2X2)                           0.1840    10.3620 r
+  mult_1268_G2/U260/Y (INVXL)                           0.0529    10.4148 f
+  mult_1268_G2/U244/Y (NOR2X1)                          0.2289    10.6437 r
+  mult_1268_G2/S2_2_6/CO (ADDFHX2)                      0.3326    10.9763 r
+  mult_1268_G2/S2_3_6/CO (ADDFHX2)                      0.2423    11.2186 r
+  mult_1268_G2/S2_4_6/CO (ADDFX2)                       0.4860    11.7046 r
+  mult_1268_G2/S2_5_6/S (ADDFHX2)                       0.2864    11.9910 f
+  mult_1268_G2/S2_6_5/CO (ADDFHX1)                      0.2702    12.2612 f
+  mult_1268_G2/S2_7_5/S (ADDFHX1)                       0.3626    12.6238 f
+  mult_1268_G2/U233/Y (NAND2XL)                         0.1610    12.7848 r
+  mult_1268_G2/U221/Y (NAND3X2)                         0.1764    12.9612 f
+  mult_1268_G2/S2_9_4/CO (ADDFHX4)                      0.3073    13.2685 f
+  mult_1268_G2/S2_10_4/CO (ADDFHX4)                     0.2734    13.5419 f
+  mult_1268_G2/S2_11_4/CO (ADDFHX4)                     0.2734    13.8153 f
+  mult_1268_G2/S2_12_4/CO (ADDFHX4)                     0.2528    14.0681 f
+  mult_1268_G2/S2_13_4/CO (ADDFHX2)                     0.2915    14.3596 f
+  mult_1268_G2/S2_14_4/S (ADDFHX2)                      0.2955    14.6551 f
+  mult_1268_G2/S2_15_3/S (ADDFHX4)                      0.2535    14.9085 r
+  mult_1268_G2/U10/Y (XOR3X2)                           0.2056    15.1142 r
+  mult_1268_G2/S4_1/S (ADDFHX1)                         0.3231    15.4372 r
+  mult_1268_G2/U114/Y (INVX3)                           0.0543    15.4916 f
+  mult_1268_G2/U11/Y (XNOR2X2)                          0.1584    15.6500 r
+  mult_1268_G2/FS_1/A[16] (lenet_DW01_add_45_DW01_add_125)
+                                                        0.0000    15.6500 r
+  mult_1268_G2/FS_1/U2/Y (NAND2X2)                      0.0872    15.7372 f
+  mult_1268_G2/FS_1/U63/Y (OA21X4)                      0.2034    15.9406 f
+  mult_1268_G2/FS_1/U64/Y (OA21X4)                      0.1913    16.1319 f
+  mult_1268_G2/FS_1/U40/Y (OA21X4)                      0.1938    16.3257 f
+  mult_1268_G2/FS_1/U39/Y (OA21X4)                      0.1977    16.5234 f
+  mult_1268_G2/FS_1/U42/Y (OA21X4)                      0.1913    16.7147 f
+  mult_1268_G2/FS_1/U41/Y (OA21X4)                      0.1938    16.9085 f
+  mult_1268_G2/FS_1/U62/Y (OA21X4)                      0.1945    17.1031 f
+  mult_1268_G2/FS_1/U61/Y (OA21X4)                      0.1945    17.2976 f
+  mult_1268_G2/FS_1/U66/Y (OA21X4)                      0.1946    17.4922 f
+  mult_1268_G2/FS_1/U65/Y (OA21X4)                      0.2130    17.7052 f
+  mult_1268_G2/FS_1/U67/Y (OAI21X4)                     0.1218    17.8270 r
+  mult_1268_G2/FS_1/U12/Y (INVX3)                       0.0577    17.8847 f
+  mult_1268_G2/FS_1/U10/Y (NAND2X4)                     0.0558    17.9405 r
+  mult_1268_G2/FS_1/U11/Y (NAND2X2)                     0.0671    18.0076 f
+  mult_1268_G2/FS_1/SUM[28] (lenet_DW01_add_45_DW01_add_125)
+                                                        0.0000    18.0076 f
+  mult_1268_G2/PRODUCT[30] (lenet_DW02_mult_1_DW02_mult_41)
+                                                        0.0000    18.0076 f
+  U1983/Y (OR4X8)                                       0.2749    18.2825 f
+  U1982/Y (NOR2X8)                                      0.0821    18.3646 r
+  U2126/Y (NOR2X6)                                      0.0812    18.4457 f
+  U1981/Y (OR2X4)                                       0.1814    18.6272 f
+  U2240/Y (AO22X4)                                      0.2230    18.8502 f
+  U4174/Y (AOI211X1)                                    0.1109    18.9611 r
+  U2244/Y (MXI2XL)                                      0.1048    19.0659 f
+  sram_act_wdata0_reg[17]/D (DFFQXL)                    0.0000    19.0659 f
+  data arrival time                                               19.0659
+
+  clock clk (rise edge)                                19.3000    19.3000
+  clock network delay (ideal)                           0.0000    19.3000
+  sram_act_wdata0_reg[17]/CK (DFFQXL)                   0.0000    19.3000 r
+  library setup time                                   -0.2328    19.0672
+  data required time                                              19.0672
+  --------------------------------------------------------------------------
+  data required time                                              19.0672
+  data arrival time                                              -19.0659
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0013
+
+
+1
