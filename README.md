@@ -2,7 +2,7 @@
 This is the repository of project in the course (VLSI_System_Design - CS5120, 2022 Spring, NTHU)
 
 ## Model Architecture
-
+This is a Modified Lenet Model.
 =================================================================<br>
 Layer (type:depth-idx)                   Param #                 <br>
 =================================================================<br>
