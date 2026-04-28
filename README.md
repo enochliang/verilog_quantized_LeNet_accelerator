@@ -6,5 +6,6 @@ In this project, I quantized a LeNet into 18-bit for the partial sums, and imple
 ## Model Architecture
 This is a Modified Lenet Model.
 
-![LeNet Model Architecture(pytorch)](99_images/lenet5_architecture_pytorch.png)
 ![LeNet Model Architecture](99_images/lenet5_architecture.png)
+
+## LeNet Engine Architecture
