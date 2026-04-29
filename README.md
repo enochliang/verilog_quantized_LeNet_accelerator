@@ -15,10 +15,12 @@ This is a modified Lenet-5 CNN model. I designed the dataflow by utilizing the 5
 <p align="center">
   <img src="99_images/lenet_engine_conv_arch-(mac2output).drawio.png#center" width="500" alt="LeNet Model Architecture">
 </p>
-
-![LeNet Model Architecture](99_images/lenet_engine_fc_arch.drawio.png)
-
-![LeNet Model Architecture](99_images/lenet_engine_requantization_logic.drawio.png)
+<p align="center">
+  <img src="99_images/lenet_engine_fc_arch.drawio.png#center" width="500" alt="LeNet Model Architecture">
+</p>
+<p align="center">
+  <img src="99_images/lenet_engine_requantization_logic.drawio.png#center" width="500" alt="LeNet Model Architecture">
+</p>
 
 ## LeNet Engine Architecture
 
