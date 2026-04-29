@@ -8,6 +8,14 @@ This is a Modified Lenet Model.
 
 ![LeNet Model Architecture](99_images/lenet5_architecture.png)
 
+![LeNet Model Architecture](99_images/lenet_engine_conv_arch-(sram2mac).drawio.png)
+
+![LeNet Model Architecture](99_images/lenet_engine_conv_arch-(mac2output).drawio.png)
+
+![LeNet Model Architecture](99_images/lenet_engine_fc_arch.drawio.png)
+
+![LeNet Model Architecture](99_images/lenet_engine_requantization_logic.drawio.png)
+
 ## LeNet Engine Architecture
 
 
