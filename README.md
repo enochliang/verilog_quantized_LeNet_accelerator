@@ -9,9 +9,9 @@ This is a modified Lenet-5 CNN model. I designed the dataflow by utilizing the 5
 <p align="center">
   <img src="99_images/lenet5_architecture.png#center" width="500" alt="LeNet Model Architecture">
 </p>
-
-![LeNet Model Architecture](99_images/lenet_engine_conv_arch-(sram2mac).drawio.png)
-
+<p align="center">
+  <img src="99_images/lenet_engine_conv_arch-(sram2mac).drawio.png#center" width="500" alt="LeNet Model Architecture">
+</p>
 <p align="center">
   <img src="99_images/lenet_engine_conv_arch-(mac2output).drawio.png#center" width="500" alt="LeNet Model Architecture">
 </p>
