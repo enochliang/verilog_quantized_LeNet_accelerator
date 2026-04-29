@@ -1,0 +1,20 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : lenet
+Version: R-2020.09-SP5
+Date   : Wed Apr 29 02:18:22 2026
+****************************************
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   lenet                        0.00       257310.56      -257310.56
+                                                                    (VIOLATED)
+
+
+1

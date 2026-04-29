@@ -1,0 +1,312 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 4
+Design : lenet
+Version: R-2020.09-SP5
+Date   : Wed Apr 29 12:21:40 2026
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: scale_CONV1[1]
+              (input port clocked by clk)
+  Endpoint: sram_act_wdata0_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    6.90       6.90 f
+  scale_CONV1[1] (in)                                     0.02       6.92 f
+  U1712/Y (NAND2X1)                                       0.07       6.99 r
+  U1713/Y (AND3X4)                                        0.18       7.17 r
+  U1710/Y (NAND2X2)                                       0.07       7.23 f
+  mul32/Bin[1] (MUL32)                                    0.00       7.23 f
+  mul32/U7/Y (BUFX4)                                      0.13       7.37 f
+  mul32/mult_1164/A[1] (MUL32_DW02_mult_0_DW02_mult_41)
+                                                          0.00       7.37 f
+  mul32/mult_1164/U130/Y (INVX3)                          0.06       7.43 r
+  mul32/mult_1164/U96/Y (INVX3)                           0.06       7.49 f
+  mul32/mult_1164/U37/Y (AND2X2)                          0.17       7.66 f
+  mul32/mult_1164/U35/Y (CLKINVX1)                        0.09       7.75 r
+  mul32/mult_1164/U72/Y (NOR2X4)                          0.08       7.83 f
+  mul32/mult_1164/S3_2_16/CO (ADDFHX4)                    0.28       8.11 f
+  mul32/mult_1164/S3_3_16/CO (ADDFHX4)                    0.27       8.38 f
+  mul32/mult_1164/S3_4_16/CO (ADDFHX4)                    0.27       8.65 f
+  mul32/mult_1164/S3_5_16/CO (ADDFHX4)                    0.27       8.93 f
+  mul32/mult_1164/S3_6_16/CO (ADDFHX4)                    0.27       9.20 f
+  mul32/mult_1164/S3_7_16/CO (ADDFHX4)                    0.24       9.44 f
+  mul32/mult_1164/U90/Y (NAND2X1)                         0.10       9.54 r
+  mul32/mult_1164/U81/Y (NAND3X2)                         0.13       9.67 f
+  mul32/mult_1164/S3_9_16/CO (ADDFHX2)                    0.27       9.94 f
+  mul32/mult_1164/S3_10_16/CO (ADDFX2)                    0.42      10.36 f
+  mul32/mult_1164/S3_11_16/S (ADDFX2)                     0.47      10.84 f
+  mul32/mult_1164/S2_12_15/CO (ADDFHX1)                   0.26      11.10 f
+  mul32/mult_1164/S4_15/S (ADDFX2)                        0.47      11.57 f
+  mul32/mult_1164/U387/Y (CLKINVX1)                       0.08      11.64 r
+  mul32/mult_1164/U386/Y (XNOR2X1)                        0.16      11.80 f
+  mul32/mult_1164/FS_1/A[26] (MUL32_DW01_add_2)           0.00      11.80 f
+  mul32/mult_1164/FS_1/U119/Y (OR2X2)                     0.24      12.05 f
+  mul32/mult_1164/FS_1/U65/Y (AND2X2)                     0.19      12.24 f
+  mul32/mult_1164/FS_1/U51/Y (NAND2X1)                    0.08      12.32 r
+  mul32/mult_1164/FS_1/U133/Y (NAND2BXL)                  0.16      12.47 r
+  mul32/mult_1164/FS_1/U149/Y (NAND2XL)                   0.08      12.55 f
+  mul32/mult_1164/FS_1/U207/Y (NOR2X1)                    0.11      12.67 r
+  mul32/mult_1164/FS_1/U115/Y (XNOR2X2)                   0.17      12.83 f
+  mul32/mult_1164/FS_1/SUM[29] (MUL32_DW01_add_2)         0.00      12.83 f
+  mul32/mult_1164/PRODUCT[31] (MUL32_DW02_mult_0_DW02_mult_41)
+                                                          0.00      12.83 f
+  mul32/Out[31] (MUL32)                                   0.00      12.83 f
+  U2743/Y (AOI21X4)                                       0.16      13.00 r
+  U1367/Y (NAND2BX2)                                      0.17      13.17 r
+  U1370/Y (INVX3)                                         0.05      13.22 f
+  U1431/Y (AO22X4)                                        0.22      13.44 f
+  U1425/Y (AO21X4)                                        0.15      13.59 f
+  sram_act_wdata0_reg[7]/D (DFFQXL)                       0.00      13.59 f
+  data arrival time                                                 13.59
+
+  clock clk (rise edge)                                  13.80      13.80
+  clock network delay (ideal)                             0.00      13.80
+  sram_act_wdata0_reg[7]/CK (DFFQXL)                      0.00      13.80 r
+  library setup time                                     -0.21      13.59
+  data required time                                                13.59
+  --------------------------------------------------------------------------
+  data required time                                                13.59
+  data arrival time                                                -13.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: scale_FC2[2]
+              (input port clocked by clk)
+  Endpoint: sram_act_wdata0_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    6.90       6.90 f
+  scale_FC2[2] (in)                                       0.01       6.91 f
+  U1391/Y (AND2X2)                                        0.15       7.06 f
+  U1366/Y (NOR2X2)                                        0.12       7.18 r
+  U1365/Y (NAND2X4)                                       0.11       7.29 f
+  mul32/Bin[2] (MUL32)                                    0.00       7.29 f
+  mul32/mult_1164/A[2] (MUL32_DW02_mult_0_DW02_mult_41)
+                                                          0.00       7.29 f
+  mul32/mult_1164/U132/Y (CLKINVX1)                       0.09       7.39 r
+  mul32/mult_1164/U121/Y (INVX3)                          0.08       7.46 f
+  mul32/mult_1164/U123/Y (AND2XL)                         0.16       7.62 f
+  mul32/mult_1164/U6/Y (CLKINVX1)                         0.05       7.67 r
+  mul32/mult_1164/U7/Y (CLKINVX1)                         0.10       7.77 f
+  mul32/mult_1164/S2_2_8/CO (ADDFHX4)                     0.36       8.13 f
+  mul32/mult_1164/S2_3_8/CO (ADDFHX4)                     0.27       8.40 f
+  mul32/mult_1164/S2_4_8/CO (ADDFHX4)                     0.27       8.68 f
+  mul32/mult_1164/S2_5_8/CO (ADDFHX4)                     0.25       8.93 f
+  mul32/mult_1164/S2_6_8/CO (ADDFHX2)                     0.29       9.22 f
+  mul32/mult_1164/S2_7_8/CO (ADDFHX2)                     0.30       9.52 f
+  mul32/mult_1164/S2_8_8/CO (ADDFHX2)                     0.30       9.82 f
+  mul32/mult_1164/S2_9_8/CO (ADDFHX2)                     0.30      10.12 f
+  mul32/mult_1164/S2_10_8/CO (ADDFHX2)                    0.28      10.41 f
+  mul32/mult_1164/U238/Y (XOR3X2)                         0.39      10.80 f
+  mul32/mult_1164/S2_12_7/S (ADDFHX2)                     0.25      11.05 r
+  mul32/mult_1164/S4_6/S (ADDFHX2)                        0.25      11.30 r
+  mul32/mult_1164/U133/Y (CLKINVX1)                       0.06      11.36 f
+  mul32/mult_1164/U232/Y (NAND2X1)                        0.08      11.44 r
+  mul32/mult_1164/U107/Y (NAND2X1)                        0.07      11.51 f
+  mul32/mult_1164/FS_1/A[17] (MUL32_DW01_add_2)           0.00      11.51 f
+  mul32/mult_1164/FS_1/U29/Y (OR2X1)                      0.27      11.78 f
+  mul32/mult_1164/FS_1/U6/Y (CLKINVX2)                    0.07      11.85 r
+  mul32/mult_1164/FS_1/U8/Y (OAI21X2)                     0.07      11.92 f
+  mul32/mult_1164/FS_1/U7/Y (NAND2X2)                     0.07      11.98 r
+  mul32/mult_1164/FS_1/U34/Y (INVX1)                      0.06      12.04 f
+  mul32/mult_1164/FS_1/U177/Y (NOR2X1)                    0.09      12.14 r
+  mul32/mult_1164/FS_1/U21/Y (OAI21X1)                    0.10      12.23 f
+  mul32/mult_1164/FS_1/U62/Y (CLKINVX1)                   0.07      12.30 r
+  mul32/mult_1164/FS_1/U82/Y (NOR2X1)                     0.05      12.35 f
+  mul32/mult_1164/FS_1/U22/Y (NOR2X1)                     0.11      12.46 r
+  mul32/mult_1164/FS_1/U13/Y (XNOR2X2)                    0.17      12.63 f
+  mul32/mult_1164/FS_1/SUM[26] (MUL32_DW01_add_2)         0.00      12.63 f
+  mul32/mult_1164/PRODUCT[28] (MUL32_DW02_mult_0_DW02_mult_41)
+                                                          0.00      12.63 f
+  mul32/Out[28] (MUL32)                                   0.00      12.63 f
+  U1422/Y (NOR2X4)                                        0.09      12.72 r
+  U1355/Y (INVX3)                                         0.05      12.77 f
+  U1469/Y (NOR3X4)                                        0.08      12.85 r
+  U2743/Y (AOI21X4)                                       0.11      12.96 f
+  U2744/Y (OR2X4)                                         0.17      13.14 f
+  U1424/Y (AO22X4)                                        0.22      13.35 f
+  U1407/Y (AO21X1)                                        0.23      13.58 f
+  sram_act_wdata0_reg[6]/D (DFFQXL)                       0.00      13.58 f
+  data arrival time                                                 13.58
+
+  clock clk (rise edge)                                  13.80      13.80
+  clock network delay (ideal)                             0.00      13.80
+  sram_act_wdata0_reg[6]/CK (DFFQXL)                      0.00      13.80 r
+  library setup time                                     -0.22      13.58
+  data required time                                                13.58
+  --------------------------------------------------------------------------
+  data required time                                                13.58
+  data arrival time                                                -13.58
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: scale_CONV1[1]
+              (input port clocked by clk)
+  Endpoint: sram_act_wdata0_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    6.90       6.90 f
+  scale_CONV1[1] (in)                                     0.02       6.92 f
+  U1712/Y (NAND2X1)                                       0.07       6.99 r
+  U1713/Y (AND3X4)                                        0.18       7.17 r
+  U1710/Y (NAND2X2)                                       0.07       7.23 f
+  mul32/Bin[1] (MUL32)                                    0.00       7.23 f
+  mul32/U7/Y (BUFX4)                                      0.13       7.37 f
+  mul32/mult_1164/A[1] (MUL32_DW02_mult_0_DW02_mult_41)
+                                                          0.00       7.37 f
+  mul32/mult_1164/U130/Y (INVX3)                          0.06       7.43 r
+  mul32/mult_1164/U96/Y (INVX3)                           0.06       7.49 f
+  mul32/mult_1164/U37/Y (AND2X2)                          0.17       7.66 f
+  mul32/mult_1164/U35/Y (CLKINVX1)                        0.09       7.75 r
+  mul32/mult_1164/U72/Y (NOR2X4)                          0.08       7.83 f
+  mul32/mult_1164/S3_2_16/CO (ADDFHX4)                    0.28       8.11 f
+  mul32/mult_1164/S3_3_16/CO (ADDFHX4)                    0.27       8.38 f
+  mul32/mult_1164/S3_4_16/CO (ADDFHX4)                    0.27       8.65 f
+  mul32/mult_1164/S3_5_16/CO (ADDFHX4)                    0.27       8.93 f
+  mul32/mult_1164/S3_6_16/CO (ADDFHX4)                    0.27       9.20 f
+  mul32/mult_1164/S3_7_16/CO (ADDFHX4)                    0.24       9.44 f
+  mul32/mult_1164/U90/Y (NAND2X1)                         0.10       9.54 r
+  mul32/mult_1164/U81/Y (NAND3X2)                         0.13       9.67 f
+  mul32/mult_1164/S3_9_16/CO (ADDFHX2)                    0.27       9.94 f
+  mul32/mult_1164/S3_10_16/CO (ADDFX2)                    0.42      10.36 f
+  mul32/mult_1164/S3_11_16/S (ADDFX2)                     0.47      10.84 f
+  mul32/mult_1164/S2_12_15/CO (ADDFHX1)                   0.26      11.10 f
+  mul32/mult_1164/S4_15/S (ADDFX2)                        0.47      11.57 f
+  mul32/mult_1164/U387/Y (CLKINVX1)                       0.08      11.64 r
+  mul32/mult_1164/U386/Y (XNOR2X1)                        0.16      11.80 f
+  mul32/mult_1164/FS_1/A[26] (MUL32_DW01_add_2)           0.00      11.80 f
+  mul32/mult_1164/FS_1/U119/Y (OR2X2)                     0.24      12.05 f
+  mul32/mult_1164/FS_1/U65/Y (AND2X2)                     0.19      12.24 f
+  mul32/mult_1164/FS_1/U51/Y (NAND2X1)                    0.08      12.32 r
+  mul32/mult_1164/FS_1/U133/Y (NAND2BXL)                  0.16      12.47 r
+  mul32/mult_1164/FS_1/U149/Y (NAND2XL)                   0.08      12.55 f
+  mul32/mult_1164/FS_1/U207/Y (NOR2X1)                    0.11      12.67 r
+  mul32/mult_1164/FS_1/U115/Y (XNOR2X2)                   0.17      12.83 f
+  mul32/mult_1164/FS_1/SUM[29] (MUL32_DW01_add_2)         0.00      12.83 f
+  mul32/mult_1164/PRODUCT[31] (MUL32_DW02_mult_0_DW02_mult_41)
+                                                          0.00      12.83 f
+  mul32/Out[31] (MUL32)                                   0.00      12.83 f
+  U2743/Y (AOI21X4)                                       0.16      13.00 r
+  U1367/Y (NAND2BX2)                                      0.17      13.17 r
+  U2739/Y (OAI22XL)                                       0.13      13.30 f
+  U1468/Y (AO21X4)                                        0.17      13.47 f
+  sram_act_wdata0_reg[31]/D (EDFFXL)                      0.00      13.47 f
+  data arrival time                                                 13.47
+
+  clock clk (rise edge)                                  13.80      13.80
+  clock network delay (ideal)                             0.00      13.80
+  sram_act_wdata0_reg[31]/CK (EDFFXL)                     0.00      13.80 r
+  library setup time                                     -0.33      13.47
+  data required time                                                13.47
+  --------------------------------------------------------------------------
+  data required time                                                13.47
+  data arrival time                                                -13.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: scale_CONV1[1]
+              (input port clocked by clk)
+  Endpoint: sram_act_wdata1_reg[27]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    6.90       6.90 f
+  scale_CONV1[1] (in)                                     0.02       6.92 f
+  U1712/Y (NAND2X1)                                       0.07       6.99 r
+  U1713/Y (AND3X4)                                        0.18       7.17 r
+  U1710/Y (NAND2X2)                                       0.07       7.23 f
+  mult_1119/A[1] (lenet_DW02_mult_0_DW02_mult_40)         0.00       7.23 f
+  mult_1119/U200/Y (INVX3)                                0.07       7.30 r
+  mult_1119/U130/Y (INVX4)                                0.06       7.36 f
+  mult_1119/U78/Y (AND2X2)                                0.17       7.53 f
+  mult_1119/U21/Y (CLKINVX2)                              0.07       7.60 r
+  mult_1119/U20/Y (NOR2X4)                                0.06       7.66 f
+  mult_1119/S2_2_11/CO (ADDFHX2)                          0.29       7.95 f
+  mult_1119/S2_3_11/CO (ADDFHX2)                          0.30       8.25 f
+  mult_1119/S2_4_11/CO (ADDFHX2)                          0.30       8.55 f
+  mult_1119/S2_5_11/CO (ADDFHX2)                          0.30       8.85 f
+  mult_1119/S2_6_11/CO (ADDFHX2)                          0.30       9.15 f
+  mult_1119/S2_7_11/CO (ADDFHX2)                          0.30       9.46 f
+  mult_1119/S2_8_11/S (ADDFHX2)                           0.32       9.77 f
+  mult_1119/U30/Y (XOR2X4)                                0.14       9.92 r
+  mult_1119/U29/Y (XOR2X4)                                0.14      10.06 f
+  mult_1119/S2_10_9/CO (ADDFHX4)                          0.23      10.29 f
+  mult_1119/S2_11_9/CO (ADDFHX4)                          0.27      10.56 f
+  mult_1119/S2_12_9/CO (ADDFHX4)                          0.23      10.79 f
+  mult_1119/S4_9/S (ADDFX1)                               0.43      11.22 f
+  mult_1119/U28/Y (CLKINVX2)                              0.07      11.29 r
+  mult_1119/U295/Y (XNOR2X1)                              0.15      11.44 r
+  mult_1119/FS_1/A[20] (lenet_DW01_add_53)                0.00      11.44 r
+  mult_1119/FS_1/U111/Y (INVX1)                           0.08      11.52 f
+  mult_1119/FS_1/U7/Y (NAND2X2)                           0.08      11.60 r
+  mult_1119/FS_1/U70/Y (NAND2X2)                          0.07      11.67 f
+  mult_1119/FS_1/U55/Y (INVX3)                            0.04      11.72 r
+  mult_1119/FS_1/U67/Y (NAND2X2)                          0.05      11.77 f
+  mult_1119/FS_1/U62/Y (NAND2BX4)                         0.13      11.90 f
+  mult_1119/FS_1/U61/Y (NOR2X2)                           0.11      12.00 r
+  mult_1119/FS_1/U58/Y (NOR2X4)                           0.07      12.07 f
+  mult_1119/FS_1/U78/Y (NAND2X2)                          0.07      12.14 r
+  mult_1119/FS_1/U68/Y (INVX3)                            0.06      12.19 f
+  mult_1119/FS_1/U54/Y (NAND2X6)                          0.06      12.25 r
+  mult_1119/FS_1/U9/Y (INVX6)                             0.05      12.30 f
+  mult_1119/FS_1/U83/Y (OAI21X4)                          0.11      12.41 r
+  mult_1119/FS_1/U8/Y (INVX4)                             0.07      12.48 f
+  mult_1119/FS_1/U79/Y (NAND2X6)                          0.06      12.54 r
+  mult_1119/FS_1/U51/Y (NAND2X6)                          0.05      12.59 f
+  mult_1119/FS_1/SUM[28] (lenet_DW01_add_53)              0.00      12.59 f
+  mult_1119/PRODUCT[30] (lenet_DW02_mult_0_DW02_mult_40)
+                                                          0.00      12.59 f
+  U1352/Y (NOR4X4)                                        0.19      12.78 r
+  U1459/Y (AOI21X2)                                       0.14      12.93 f
+  U1438/Y (OR2X1)                                         0.32      13.25 f
+  U1715/Y (CLKINVX1)                                      0.10      13.35 r
+  U2243/Y (OAI222XL)                                      0.16      13.51 f
+  sram_act_wdata1_reg[27]/D (DFFQX1)                      0.00      13.51 f
+  data arrival time                                                 13.51
+
+  clock clk (rise edge)                                  13.80      13.80
+  clock network delay (ideal)                             0.00      13.80
+  sram_act_wdata1_reg[27]/CK (DFFQX1)                     0.00      13.80 r
+  library setup time                                     -0.29      13.51
+  data required time                                                13.51
+  --------------------------------------------------------------------------
+  data required time                                                13.51
+  data arrival time                                                -13.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

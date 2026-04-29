@@ -1,0 +1,137 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 4
+Design : lenet
+Version: R-2020.09-SP5
+Date   : Wed Apr 29 09:34:53 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: sram_act_wdata0_reg[20]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sram_act_wdata0_reg[20]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  sram_act_wdata0_reg[20]/CK (DFFHQX2)                    0.00 #     0.00 r
+  sram_act_wdata0_reg[20]/Q (DFFHQX2)                     0.19       0.19 r
+  U3115/Y (AOI22X1)                                       0.06       0.25 f
+  U2041/Y (NAND2X1)                                       0.06       0.31 r
+  sram_act_wdata0_reg[20]/D (DFFHQX2)                     0.00       0.31 r
+  data arrival time                                                  0.31
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  sram_act_wdata0_reg[20]/CK (DFFHQX2)                    0.00       0.00 r
+  library hold time                                      -0.04      -0.04
+  data required time                                                -0.04
+  --------------------------------------------------------------------------
+  data required time                                                -0.04
+  data arrival time                                                 -0.31
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.35
+
+
+  Startpoint: sram_act_wdata0_reg[12]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sram_act_wdata0_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  sram_act_wdata0_reg[12]/CK (DFFHQX4)                    0.00 #     0.00 r
+  sram_act_wdata0_reg[12]/Q (DFFHQX4)                     0.17       0.17 f
+  U3160/Y (CLKINVX1)                                      0.04       0.21 r
+  U2061/Y (MXI2X1)                                        0.07       0.29 f
+  sram_act_wdata0_reg[12]/D (DFFHQX4)                     0.00       0.29 f
+  data arrival time                                                  0.29
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  sram_act_wdata0_reg[12]/CK (DFFHQX4)                    0.00       0.00 r
+  library hold time                                      -0.08      -0.08
+  data required time                                                -0.08
+  --------------------------------------------------------------------------
+  data required time                                                -0.08
+  data arrival time                                                 -0.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.36
+
+
+  Startpoint: sram_act_wdata0_reg[30]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sram_act_wdata0_reg[30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  sram_act_wdata0_reg[30]/CK (DFFHQX4)                    0.00 #     0.00 r
+  sram_act_wdata0_reg[30]/Q (DFFHQX4)                     0.17       0.17 f
+  U3174/Y (CLKINVX1)                                      0.04       0.21 r
+  U2049/Y (MXI2X1)                                        0.07       0.29 f
+  sram_act_wdata0_reg[30]/D (DFFHQX4)                     0.00       0.29 f
+  data arrival time                                                  0.29
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  sram_act_wdata0_reg[30]/CK (DFFHQX4)                    0.00       0.00 r
+  library hold time                                      -0.08      -0.08
+  data required time                                                -0.08
+  --------------------------------------------------------------------------
+  data required time                                                -0.08
+  data arrival time                                                 -0.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.36
+
+
+  Startpoint: sram_act_wdata0_reg[28]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sram_act_wdata0_reg[28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  sram_act_wdata0_reg[28]/CK (DFFHQX4)                    0.00 #     0.00 r
+  sram_act_wdata0_reg[28]/Q (DFFHQX4)                     0.17       0.17 f
+  U3143/Y (CLKINVX1)                                      0.04       0.21 r
+  U1973/Y (MXI2X1)                                        0.07       0.29 f
+  sram_act_wdata0_reg[28]/D (DFFHQX4)                     0.00       0.29 f
+  data arrival time                                                  0.29
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  sram_act_wdata0_reg[28]/CK (DFFHQX4)                    0.00       0.00 r
+  library hold time                                      -0.08      -0.08
+  data required time                                                -0.08
+  --------------------------------------------------------------------------
+  data required time                                                -0.08
+  data arrival time                                                 -0.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.36
+
+
+1

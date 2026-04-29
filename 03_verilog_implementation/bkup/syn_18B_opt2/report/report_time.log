@@ -1,0 +1,93 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : lenet
+Version: R-2020.09-SP5
+Date   : Wed Apr 29 09:34:53 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: scale_CONV1[12]
+              (input port clocked by clk)
+  Endpoint: sram_act_wdata0_reg[29]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  input external delay                                  6.9500     6.9500 r
+  scale_CONV1[12] (in)                                  0.0180     6.9680 r
+  U1963/Y (CLKAND2X3)                                   0.1558     7.1238 r
+  U2097/Y (NOR3X4)                                      0.0689     7.1926 f
+  U1895/Y (OAI211X1)                                    0.1446     7.3372 r
+  mult_1294/B[12] (lenet_DW02_mult_0_DW02_mult_40)      0.0000     7.3372 r
+  mult_1294/U19/Y (CLKAND2X2)                           0.2017     7.5389 r
+  mult_1294/U18/Y (CLKINVX3)                            0.1019     7.6409 f
+  mult_1294/U7/Y (NOR2X8)                               0.0958     7.7367 r
+  mult_1294/S3_2_12/S (ADDFHX4)                         0.2603     7.9969 f
+  mult_1294/S2_3_11/S (ADDFHX4)                         0.2638     8.2607 r
+  mult_1294/U150/Y (XOR2X4)                             0.1080     8.3687 r
+  mult_1294/U71/Y (INVX4)                               0.0564     8.4251 f
+  mult_1294/U317/Y (NAND2X2)                            0.0562     8.4814 r
+  mult_1294/U318/Y (NAND2X2)                            0.0601     8.5414 f
+  mult_1294/S2_5_9/CO (ADDFHX4)                         0.2197     8.7611 f
+  mult_1294/S2_6_9/CO (ADDFHX4)                         0.2734     9.0344 f
+  mult_1294/S2_7_9/CO (ADDFHX4)                         0.2734     9.3078 f
+  mult_1294/S2_8_9/CO (ADDFHX4)                         0.2734     9.5812 f
+  mult_1294/S2_9_9/CO (ADDFHX4)                         0.2734     9.8545 f
+  mult_1294/S2_10_9/CO (ADDFHX4)                        0.2734    10.1279 f
+  mult_1294/S2_11_9/S (ADDFHX4)                         0.2550    10.3829 f
+  mult_1294/S2_12_8/S (ADDFHX4)                         0.2788    10.6617 f
+  mult_1294/S2_13_7/CO (ADDFHX4)                        0.2731    10.9348 f
+  mult_1294/S2_14_7/S (ADDFHX4)                         0.2550    11.1898 f
+  mult_1294/S2_15_6/S (ADDFHX4)                         0.2420    11.4318 r
+  mult_1294/S2_16_5/S (ADDFHX4)                         0.2427    11.6745 r
+  mult_1294/U6/Y (INVX4)                                0.0503    11.7248 f
+  mult_1294/U378/Y (NOR2BX4)                            0.1373    11.8621 r
+  mult_1294/S14_22/S (ADDFHX4)                          0.2896    12.1517 f
+  mult_1294/FS_1/A[20] (lenet_DW01_add_63)              0.0000    12.1517 f
+  mult_1294/FS_1/U11/Y (CLKINVX3)                       0.0546    12.2063 r
+  mult_1294/FS_1/U26/Y (NAND2BX4)                       0.0645    12.2708 f
+  mult_1294/FS_1/U20/Y (NAND2X4)                        0.0679    12.3386 r
+  mult_1294/FS_1/U19/Y (INVX4)                          0.0450    12.3836 f
+  mult_1294/FS_1/U35/Y (NAND2X1)                        0.0752    12.4589 r
+  mult_1294/FS_1/U98/Y (NAND2X1)                        0.0795    12.5384 f
+  mult_1294/FS_1/U27/Y (NOR2X2)                         0.0841    12.6225 r
+  mult_1294/FS_1/U45/Y (NOR2X1)                         0.0609    12.6834 f
+  mult_1294/FS_1/U43/Y (NOR2X2)                         0.0948    12.7782 r
+  mult_1294/FS_1/U116/Y (XNOR2X4)                       0.1274    12.9056 f
+  mult_1294/FS_1/SUM[26] (lenet_DW01_add_63)            0.0000    12.9056 f
+  mult_1294/PRODUCT[28] (lenet_DW02_mult_0_DW02_mult_40)
+                                                        0.0000    12.9056 f
+  U2104/Y (OR2X8)                                       0.1712    13.0768 f
+  U1967/Y (CLKAND2X12)                                  0.1227    13.1995 f
+  U1941/Y (OR3X6)                                       0.2327    13.4322 f
+  U2070/Y (AOI222X2)                                    0.1439    13.5760 r
+  U1969/Y (NAND2X2)                                     0.0650    13.6410 f
+  U1964/Y (CLKAND2X3)                                   0.1185    13.7595 f
+  sram_act_wdata0_reg[29]/D (DFFHQX4)                   0.0000    13.7595 f
+  data arrival time                                               13.7595
+
+  clock clk (rise edge)                                13.9000    13.9000
+  clock network delay (ideal)                           0.0000    13.9000
+  sram_act_wdata0_reg[29]/CK (DFFHQX4)                  0.0000    13.9000 r
+  library setup time                                   -0.1400    13.7600
+  data required time                                              13.7600
+  --------------------------------------------------------------------------
+  data required time                                              13.7600
+  data arrival time                                              -13.7595
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0005
+
+
+1
