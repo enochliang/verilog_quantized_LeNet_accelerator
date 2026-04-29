@@ -7,7 +7,7 @@ In this project, I quantized a LeNet into 18-bit for the partial sums, and imple
 This is a modified Lenet-5 CNN model. I designed the dataflow by utilizing the 5x5 dimension of the two convolution layers and the 2x2 dimension of the following pooling layers, which can fetch and process the data effectively without repeating.
 
 <p align="center">
-  <img src="99_images/lenet5_architecture.png#center" width="300" alt="LeNet Model Architecture">
+  <img src="99_images/lenet5_architecture.png#center" width="500" alt="LeNet Model Architecture">
 </p>
 
 ![LeNet Model Architecture](99_images/lenet_engine_conv_arch-(sram2mac).drawio.png)
