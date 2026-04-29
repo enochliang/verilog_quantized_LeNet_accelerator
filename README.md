@@ -10,7 +10,8 @@ This is a Modified Lenet Model.
 
 ## LeNet Engine Architecture
 
-## Optimization
+
+## Optimization Result
 |   Optimization   |   Area   |   Clock Period   |
 | ---------------- | -------- | ---------------- |
 | 32-bit partial-sum | 416650.59 | 19.3 |
