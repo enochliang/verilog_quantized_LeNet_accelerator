@@ -4,8 +4,7 @@ This is the repository of project in the course (VLSI_System_Design - CS5120, 20
 In this project, I quantized a LeNet into 18-bit for the partial sums, and implemented the hardware engine with verilog.
 
 ## Model Architecture (Algorithm)
-This is a modified Lenet-5 CNN model. I Design the dataflow by utilizing the 5x5 dimension of the two convolution layers and the 2x2 dimension of the following pooling layers, which can process the data effectively without fetching any data repeatedly. 
-
+This is a modified Lenet-5 CNN model. I designed the dataflow by utilizing the 5x5 dimension of the two convolution layers and the 2x2 dimension of the following pooling layers, which can fetch and process the data effectively without repeating.
 ![LeNet Model Architecture](99_images/lenet5_architecture.png)
 
 ![LeNet Model Architecture](99_images/lenet_engine_conv_arch-(sram2mac).drawio.png)
