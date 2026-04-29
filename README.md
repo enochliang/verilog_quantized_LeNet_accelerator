@@ -11,7 +11,10 @@ This is a Modified Lenet Model.
 ## LeNet Engine Architecture
 
 ## Optimization
-|   Name   |   Area   |
-| -------- | -------- |
-| 32-bit partial-sum |  |
-| 18-bit partial-sum |  |
+|   Name   |   Area   |   Clock Period   |
+| -------- | -------- | ---------------- |
+| 32-bit partial-sum | 416650.59 | 19.3 |
+| 18-bit partial-sum | 289875.18 | 19.3 |
+| 18b, shared requant circuit | 257310.56 | 19.3 |
+| 18b, small requant multiplier | 233470.58 | 13.9 |
+| 18b, 40MAC --> 40MUL + ACC | 180445.50 | 13.8 |
