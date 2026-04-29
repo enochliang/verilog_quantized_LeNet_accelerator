@@ -9,3 +9,9 @@ This is a Modified Lenet Model.
 ![LeNet Model Architecture](99_images/lenet5_architecture.png)
 
 ## LeNet Engine Architecture
+
+## Optimization
+|   Name   |   Area   |
+| -------- | -------- |
+| 32-bit partial-sum |  |
+| 18-bit partial-sum |  |
